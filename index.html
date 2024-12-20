@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhilasha's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="Portfolio">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="first-section" id="Home">
+            <img src="Images/Small profile.jpg" alt="Abhilasha's profile picture" class="profile-pic">
+            <h1>Abhilasha Revannavar</h1>
+            <p class="subtitle"><em>Full Stack Developer</em></p>
+            <p class="description">Proficient in designing and building web applications with a focus on quality and
+                performance.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="second-section" id="About">
+            <div class="image-container">
+                <img src="Images/Large profile .jpg" alt="Abhilasha's profile picture" class="large-profile">
+            </div>
+            <div class="text-content">
+                <p>Trailblazing Full Stack Developer turning ideas into impactful, next-level web applications. Armed
+                    with
+                    expertise in
+                    React.js, TypeScript, PHP, and MySQL, I specialize in crafting sleek, scalable solutions that don’t
+                    just
+                    meet
+                    expectations—they redefine them. With a passion for innovation, I’m diving into Python and AI to
+                    create
+                    smarter,
+                    future-ready tech. Ready to bring bold ideas, sharp problem-solving, and unmatched energy to your
+                    team!
+                </p>
+                <h2>Skill Set</h2>
+
+                <li>Full stack skills: HTML5, CSS3, SCSS/SASS, JavaScript(ES6+), React.js, Tailwind CSS, Responsive
+                    Design,
+                    UI/UX, PHP, MySQL, RESTful APIs, CI/CD,
+                    GitLab/GitHub, and Agile/Scrum </li>
+                <li>Basics: Python, AI/ML, AWS cloud, Docker, Angular js </li>
+                <li>Soft skills: Communication, Leadership, Team Player,
+                    Problem Solving, Time management, Creativity,
+                    Analytical Thinking </li>
+                </ul>
+                <div class="Language-section">
+                    <h2>Languages Known </h2>
+                    <table>
+                        <tr>
+                            <th>Languages</th>
+                            <th>Proficiency</th>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>C2 level</td>
+                        </tr>
+                        <tr>
+                            <td>German</td>
+                            <td>B2 level</td>
+                        </tr>
+                        <tr>
+                            <td>Italian</td>
+                            <td>B2 level</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer" id="Contact">
+        <footer>
+            <p> Email me at:<a href="mailto:abhilasha.reva61@gmail.com">abhilasha.reva61@gmail.com</a> </p>
+            <a href="https://www.linkedin.com/in/abhilasha-revannavar-85a58558/" target="_blank"><img
+                    src="Images/Linkedinimg.png" alt="Abhilasha's Linkedin" class="social-icon"></a>
+            <img src="Images/Iinstagram.png" alt="Abhilasha's Instagram " class="social-icon">
+            <a href="https://www.xing.com/profile/Abhilasha_Revannavar/web_profiles?expandNeffi=true"
+                target="_blank"><img src="Images/facebook.png" alt="Abhilasha's Xing" class="social-icon"></a>
+
+        </footer>
+    </div>
+
+    <button id="back-to-top" onclick="scroolToTop()"><img src="Images/arrow_bottom_to_top.svg" alt="arrow up"></button>
+    <!-- <button id="top-to-bottom" onclick="scroolToTop()"><img src="Images/arrow_top_to_bottom.png" alt="arrow up"></button> -->
+
+
+
+
+    <script>
+
+        //  button funxtion
+        function scroolToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        //   //  button funxtion
+        //   function scroolToTop() {
+        //     window.scrollTo({top: 0, behavior: "smooth"});
+        // }
+
+        // greeting message 
+        const greetingelement = document.getElementsByClassName("Portfolio");
+        const currentHour = new Date().getHours()
+        // console.log(currentHour)
+        let greetingmessaage;
+        if (currentHour < 12) {
+            greetingmessaage = "Good Morning!";
+        }
+        else if (currentHour < 18) {
+            greetingmessaage = "Good Afternoon!";
+        }
+        else {
+            greetingmessaage = "Good Evening!";
+        }
+        greetingelement[0].innerHTML = greetingmessaage;
+
+    </script>
+</body>
+
+</html>

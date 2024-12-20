@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        /*style the container*/
+        .container {
+            display: flex;
+            justify-content: space-around;
+            border: 15px solid gray;
+            flex-wrap: wrap;
+            height: 90vh;
+
+        }
+
+        /* style for each box*/
+        .box {
+            width: 100px;
+            height: 100px;
+            color: red;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .box1 {
+            background-color: #ff5733;
+            flex: 2;
+        }
+
+        .box2 {
+            background-color: #33c9ff;
+            flex: 2;
+        }
+
+        /* Blue */
+        .box3 {
+            background-color: #75ff33;
+        }
+
+        /* Green */
+        .box4 {
+            background-color: #ffc233;
+        }
+
+        .box5 {
+            background-color: #ff5733;
+            flex: 2;
+        }
+
+        .box6 {
+            background-color: #33c9ff;
+            flex: 2;
+        }
+
+        /* Blue */
+        .box7 {
+            background-color: #75ff33;
+        }
+
+        /* Green */
+        .box8 {
+            background-color: #ffc233;
+        }
+        .box10 {
+            background-color: #ffc233;
+        }
+
+        /* Yellow */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box10">Box 10</div>
+
+    </div>
+    <div class="container">
+        <div class="box box5">Box 5</div>
+        <div class="box box6">Box 6</div>
+        <div class="box box7">Box 7</div>
+        <div class="box box8">Box 8</div>
+    </div>
+</body>
+
+</html>
